@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This title is for the browser tab -->
     <title>Happy 18th Birthday, Magu!</title>
+    <!-- Imports Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Imports Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -65,11 +68,14 @@
 
     </style>
 </head>
+<!-- This is the new aesthetic gradient background -->
 <body class="text-gray-800 min-h-screen bg-gradient-to-br from-pink-100 via-rose-50 to-sky-100">
+    <!-- Canvas for the confetti animation -->
     <canvas id="confetti-canvas"></canvas>
 
     <main class="container mx-auto px-4 py-16 sm:py-24 relative z-10">
         
+        <!-- Header Section -->
         <header class="text-center">
             <h2 class="text-6xl md:text-8xl text-pink-400 font-script animate-fadeInUp" style="opacity: 0;">
                 Happy
@@ -82,6 +88,7 @@
             </p>
         </header>
 
+        <!-- Welcome Message -->
         <section class="text-center max-w-2xl mx-auto mt-12 animate-fadeInUp delay-600" style="opacity: 0;">
             <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
                 Welcome to adulthood! Eighteen years of being absolutely amazing, and you're just getting started. I am so proud of you. May your 18th year be filled with unforgettable adventures, endless laughter, and all the success in the world!
@@ -90,23 +97,35 @@
                 The adventure begins NOW!
             </p>
             
+            <!-- Fun Button: Click to spawn more confetti! -->
             <button id="fun-button" class="mt-8 px-8 py-4 button-gradient text-lg text-gray-700 font-bold rounded-full transform transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-300">
                 Let's Make Some Magic!
             </button>
         </section>
 
+        <!-- Cake Image -->
         <section class="mt-20 md:mt-24 text-center animate-fadeInUp delay-800" style="opacity: 0;">
-            <img src="resources/IMG-20230804-WA0023.jpg"  class="w-full max-w-lg mx-auto h-auto object-cover rounded-xl shadow-md border border-gray-100">
-            <p>Look at yourself now and back then, OMG</p>
+            <!-- 
+                This is where your local image is linked.
+                Ensure you have a folder named "resources" in the same directory as this index.html file,
+                and the image "IMG-20230804-WA0023.jpg" is inside that folder.
+            -->
+            <img src="resources/IMG-20230804-WA0023.jpg" alt="Birthday cake" class="w-full max-w-lg mx-auto h-auto object-cover rounded-xl shadow-md border border-gray-100">
+            <p class="text-gray-600 mt-2">Look at yourself now and back then, OMG</p>
         </section>
 
         
+        <!-- Video Section -->
         <section class="mt-20 md:mt-24 text-center animate-fadeInUp delay-800" style="opacity: 0;">
             
             <h2 class="text-5xl text-center font-script text-pink-400 mb-12">
                 A Special Message
             </h2>
             
+            <!-- 
+                This is where your local video is linked.
+                It looks in the same "resources" folder.
+            -->
             <video 
                 class="w-full max-w-lg mx-auto h-auto rounded-xl shadow-md border border-gray-100" 
                 controls 
@@ -114,40 +133,49 @@
             >
                 <source src="resources/Birthday_Video_Creation_For_Neha.mp4" type="video/mp4">
                 
+                <!-- Fallback text if the video can't load -->
                 Your browser does not support the video tag.
             </video>
         </section>
+        
+        <!-- Photo Gallery Section -->
         <section class="mt-20 md:mt-24 animate-fadeInUp delay-800" style="opacity: 0;">
             <h2 class="text-5xl text-center font-script text-pink-400 mb-12">
                 🌸 Sweet Memories 🌸
             </h2>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                <!-- Image 1 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
                     <img src="resources/IMG-20231009-WA0043.jpg" alt="Birthday memory 1" class="w-full h-64 object-cover">
                     <p class="p-4 text-gray-600 text-center">ME you making memories </p>
                 </div>
                 
+                <!-- Image 2 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 sm:mt-8">
                     <img src="resources/IMG-20231015-WA0031.jpg" alt="Birthday memory 2" class="w-full h-64 object-cover">
                     <p class="p-4 text-gray-600 text-center">Look at you! Such a cutie</p>
                 </div>
 
+                <!-- Image 3 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
                     <img src="resources/Picsart_24-04-09_21-47-14-020.jpg" alt="Birthday memory 3" class="w-full h-64 object-cover">
                     <p class="p-4 text-gray-600 text-center">Diva🎀💅</p>
                 </div>
 
+                <!-- Image 4 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
                     <img src="resources/IMG20240125160940.jpg" alt="Birthday memory 4" class="w-full h-64 object-cover">
                     <p class="p-4 text-gray-600 text-center">Something near to heart</p>
                 </div>
 
+                <!-- Image 5 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 sm:mt-8">
                     <img src="resources/PXL_20250909_121725957.jpg" alt="Birthday memory 5" class="w-full h-64 object-cover">
                     <p class="p-4 text-gray-600 text-center">A silly one!</p>
                 </div>
 
+                <!-- Image 6 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
                     <img src="resources/IMG-20251111-WA0034.jpg" alt="Birthday memory 6" class="w-full h-64 object-cover">
                     <p class="p-4 text-gray-600 text-center">To many more!</p>
@@ -155,6 +183,7 @@
             </div>
         </section>
 
+        <!-- Final Message -->
         <footer class="text-center max-w-xl mx-auto mt-20 md:mt-24 pb-12">
             <h2 class="text-5xl font-script text-pink-400 mb-6">
                 🌸 With Love! 🌺
@@ -180,7 +209,8 @@
         canvas.height = canvasHeight;
 
         let confetti = [];
-        const confettiCount = 200;
+        let isRaining = false; // --- NEW: State to control rain cycle
+        const rainDensity = 5; // --- NEW: How many particles to add per frame
         const colors = [
             '#f9a8d4', // pink-300
             '#f472b6', // pink-500
@@ -194,11 +224,15 @@
                 this.x = x;
                 this.y = y;
                 this.color = color;
-                this.size = Math.random() * 7 + 3; // 3px to 10px
-                this.speedX = Math.random() * 6 - 3; // -3 to +3
-                this.speedY = Math.random() * 5 + 3; // 3 to 8 (downwards)
+                this.size = Math.random() * 6 + 3; // 3px to 9px
+                // --- SLOWER SPEEDS ---
+                this.speedX = Math.random() * 4 - 2; // -2 to +2 (slower)
+                this.speedY = Math.random() * 3 + 1; // 1 to 4 (slower)
                 this.angle = Math.random() * 2 * Math.PI;
-                this.spin = Math.random() * 0.1 - 0.05; // -0.05 to +0.05
+                this.spin = Math.random() * 0.06 - 0.03; // slower spin
+                this.opacity = 1;
+                // --- UPDATED: Slower fade rate to last longer ---
+                this.fadeRate = Math.random() * 0.005 + 0.002; // Lasts ~5-8 seconds
             }
 
             // Update particle position
@@ -208,24 +242,18 @@
                 this.angle += this.spin;
                 
                 // Add a little horizontal flutter
-                this.speedX += (Math.random() * 0.2 - 0.1);
+                this.speedX += (Math.random() * 0.1 - 0.05); // Slower flutter
 
-                // Reset particle if it goes off-screen
-                if (this.y > canvasHeight) {
-                    this.x = Math.random() * canvasWidth;
-                    this.y = -10; // Reset just above the screen
-                }
-                if (this.x > canvasWidth) {
-                    this.x = 0;
-                }
-                if (this.x < 0) {
-                    this.x = canvasWidth;
-                }
+                // Fade out
+                this.opacity -= this.fadeRate;
+                if (this.opacity < 0) this.opacity = 0;
             }
 
             // Draw particle
             draw() {
+                if (this.opacity <= 0) return;
                 ctx.save();
+                ctx.globalAlpha = this.opacity;
                 ctx.translate(this.x, this.y);
                 ctx.rotate(this.angle);
                 ctx.fillStyle = this.color;
@@ -236,15 +264,24 @@
             }
         }
 
-        // Create initial confetti burst
-        function initConfetti() {
-            for (let i = 0; i < confettiCount; i++) {
-                confetti.push(new ConfettiParticle(
-                    Math.random() * canvasWidth, 
-                    Math.random() * canvasHeight - canvasHeight, // Start above screen
-                    colors[Math.floor(Math.random() * colors.length)]
-                ));
-            }
+        // --- NEW: Adds a single rain particle at the top ---
+        function createRainParticle() {
+            confetti.push(new ConfettiParticle(
+                Math.random() * canvasWidth, 
+                -10, // Start just above the screen
+                colors[Math.floor(Math.random() * colors.length)]
+            ));
+        }
+
+        // --- NEW: Functions to control the rain cycle ---
+        function startRain() {
+            isRaining = true;
+            setTimeout(stopRain, 10000); // Rain for 10 seconds
+        }
+
+        function stopRain() {
+            isRaining = false;
+            setTimeout(startRain, 5000); // Pause for 5 seconds
         }
 
         // Spawn a burst of new confetti (used by button)
@@ -259,9 +296,9 @@
                     colors[Math.floor(Math.random() * colors.length)]
                 );
                 
-                // Give them more initial velocity
-                particle.speedX = Math.random() * 10 - 5; // -5 to +5
-                particle.speedY = Math.random() * -10 - 5; // -5 to -15 (upwards!)
+                // Give them more initial velocity (slower than before)
+                particle.speedX = Math.random() * 8 - 4; // -4 to +4
+                particle.speedY = Math.random() * -8 - 4; // -4 to -8 (upwards!)
                 
                 confetti.push(particle);
             }
@@ -271,7 +308,17 @@
         function animate() {
             ctx.clearRect(0, 0, canvasWidth, canvasHeight);
             
-            confetti.forEach((particle, index) => {
+            // --- NEW: Add new particles if it's raining ---
+            if (isRaining) {
+                for (let i = 0; i < rainDensity; i++) {
+                    createRainParticle();
+                }
+            }
+            
+            // --- UPDATED: Filter out old/faded particles ---
+            confetti = confetti.filter(particle => particle.y <= canvasHeight + particle.size && particle.opacity > 0);
+            
+            confetti.forEach((particle) => {
                 particle.update();
                 particle.draw();
             });
@@ -290,10 +337,9 @@
         // Button click listener
         funButton.addEventListener('click', spawnBurst);
 
-        // Start everything!
-        // Add back the continuous rain
-        initConfetti();
-        animate();
+        // --- UPDATED: Start sequence ---
+        startRain(); // Start the rain/pause cycle
+        animate(); // Start the animation loop
         
     </script>
 </body>
